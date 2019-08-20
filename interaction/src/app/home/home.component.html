@@ -1,0 +1,11 @@
+<div style="text-align:center">
+    <h1>parent component</h1>
+  <input type="text" [(ngModel)]='parentMessage'/>
+  {{msgFromChild}}
+  <h1>
+    <app-child [childMessage]="parentMessage" (toMama)='childSays($event)'></app-child>
+  </h1>
+</div>
+
+
+
